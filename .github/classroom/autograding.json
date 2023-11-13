@@ -1,7 +1,7 @@
 {
   "repo": "helsoc7/benutzerregistrierung",
   "introduction": "In dieser Aufgabe erstellst du eine einfache Webanwendung, die FastAPI, Jinja2 Templates, HTML und CSS verwendet. Dein Ziel ist es, eine Benutzerregistrierungsseite zu erstellen. Folge den Anweisungen und Links unter Hilfe, wenn du Hilfe benötigst.",
-  "logo_url": "https://example.com/dein-logo.jpg",
+  "logo_url": "https://www.ehc-gelsenkirchen.de/images/Bilder/sonstiges/Benutzerregistrierung.jpg",
   "timeframe": "60 Minuten (Viel Erfolg!)",
   "tests": [
     {
