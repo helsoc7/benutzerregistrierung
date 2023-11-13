@@ -1,10 +1,10 @@
 from fastapi import FastAPI, Request, Form
 from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse, RedirectResponse, FlashResponse
+from fastapi.responses import HTMLResponse, RedirectResponse
 from pydantic import BaseModel
 
 app = FastAPI()
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="./templates")
 
 
 class RegistrationForm(BaseModel):
@@ -18,13 +18,9 @@ class RegistrationForm(BaseModel):
 async def read_form(request: Request):
     return templates.TemplateResponse("register.html", {"request": request})
 
-
-@app.post("/register", response_class=HTMLResponse)
-async def register(request: Request, form: RegistrationForm = Form(...)):
-    # Add form validation logic here (e.g., email validation)
-    # For simplicity, the validation is not implemented in this example.
-    flash_message = "Registration successful! Welcome, {}!".format(form.firstname)
-    return FlashResponse(templates.TemplateResponse("register.html", {"request": request}), flash=flash_message)
+@app.post("/success", response_class=HTMLResponse)
+async def register(request: Request):
+    return templates.TemplateResponse("success.html", {"request": request})
 
 
 if __name__ == "__main__":
