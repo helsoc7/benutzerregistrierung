@@ -1,304 +1,204 @@
 {
-  "repo": "helsoc7/benutzerregistrierung",
-  "maxTestIndex": 5,
-  "incrementalPassRequired": true,
-  "testLimit": 13,
-  "introduction": "In dieser ersten kleinen Mini-Aufgabe erstellt ihr ein Skript, das Hello World ausgibt. \n Folgt den Anweisungen. Unter Hilfe findet ihr Links, die mit dem Wort Spickzettel markiert sind. Drückt diese bei Bedarf, falls ihr nicht weiterkommt. \n",
-  "logo_url": "https://www.computerhope.com/jargon/s/standard-input.png",
-  "timeframe": "15 Minuten (Viel Erfolg!)",
+  "repo": "dein-repo/hello-web",
+  "introduction": "In dieser Aufgabe erstellst du eine einfache Webanwendung, die Jinja2 Templates, HTML und CSS verwendet. Dein Ziel ist es, eine Benutzerregistrierungsseite zu erstellen. Folge den Anweisungen und Links unter Hilfe, wenn du Hilfe benötigst.",
+  "logo_url": "https://example.com/dein-logo.jpg",
+  "timeframe": "60 Minuten (Viel Erfolg!)",
   "tests": [
     {
       "specs": {
-        "title": "Erstelle ein input.sh Datei"
+        "title": "Erstelle ein Python-Skript namens `app.py`, das das Flask-Framework verwendet und Jinja2 für die Template-Engine integriert."
       },
-      "name": "checking for input.sh script",
-      "feedback": "input.sh script could not be found",
+      "name": "checking for app.py",
+      "feedback": "Die Datei app.py konnte nicht gefunden werden (Überprüfe die Datei- und Verzeichnisnamen).",
       "urls": [
-        "https://wiki.ubuntuusers.de/Shell/Bash-Skripting-Guide_f%C3%BCr_Anf%C3%A4nger/"
-      ],
-      "keywords": [
-        "bash",
-        "script",
-        "linux"
-      ],
-      "type": "",
-      "run": "test -f input.sh",
-      "file": "",
-      "output": "",
-      "comparison": "",
-      "points": 20,
-      "timeout": 120
-    },
-    {
-      "specs": {
-        "title": "Erstelle ein Shebang in der Datei"
-      },
-      "name": "checking for shebang",
-      "feedback": "shebang could not be found in the mini.sh",
-      "urls": [
-        "https://wiki.ubuntuusers.de/Shebang_f%C3%BCr_Shellskripte/"
-      ],
-      "keywords": [
-        "bash",
-        "shebang",
-        "linux"
-      ],
-      "type": "",
-      "run": "grep -q '^#!/bin/bash' input.sh",
-      "file": "",
-      "output": "",
-      "comparison": "",
-      "points": 5,
-      "timeout": 1
-    },
-    {
-      "specs": {
-        "title": "Schreibe das Bash-Skript. Dabei soll eine Eingabe von STDIN erfolgen, in der der Name eingegeben werden soll. "
-      },
-      "name": "create a script with STDIN of name",
-      "feedback": "The script does not seem to have an input for the name. Please use the read function.",
-      "urls": [
-        "https://linuxize.com/post/bash-read/"
-      ],
-      "keywords": [
-        "bash",
-        "read",
-        "stdin",
-        "linux"
-      ],
-      "type": "",
-      "run": "bash input.sh",
-      "file": "",
-      "input": "test",
-      "points": 5,
-      "timeout": 1
-    },
-    {
-      "specs": {
-        "title": "Ergänze das Bash-Skript um eine Ausgabe des Namens. Gib dabei \"Hello NAME\" aus."
-      },
-      "name": "add the output for the hello name",
-      "feedback": "The script does not seem to have an output with hello and the name that should have been entered.",
-      "urls": [
-        "https://phlow.de/magazin/terminal/echo/"
-      ],
-      "keywords": [
-        "bash",
-        "echo",
-        "variable",
-        "linux",
-        "stdout"
-      ],
-      "type": "",
-      "run": "bash input.sh",
-      "file": "",
-      "input": "test",
-      "output": "Hello test",
-      "comparison": "exact",
-      "points": 5,
-      "timeout": 1
-    },
-    {
-      "specs": {
-        "title": "Erstelle eine Python-Datei input.py"
-      },
-      "name": "add the python file.",
-      "feedback": "Please add a python file with the name input.py",
-      "urls": [],
-      "keywords": [
-        "python",
-        "file"
-      ],
-      "type": "",
-      "run": "test -f input.py",
-      "file": "",
-      "output": "",
-      "comparison": "",
-      "points": 5,
-      "timeout": 1
-    },
-    {
-      "specs": {
-        "title": "Fordere eine Eingabe mithilfe der input-Funktion und speichere sie in einer Variablen zwischen"
-      },
-      "name": "save the input in a variable",
-      "feedback": "The script does not seem to have an input function. Please add one and save it into a variable",
-      "urls": [
-        "https://www.python-kurs.eu/python3_eingabe.php"
+        "https://flask.palletsprojects.com/",
+        "https://jinja.palletsprojects.com/en/3.0.x/intro/"
       ],
       "keywords": [
         "python",
-        "input",
-        "variable"
+        "flask",
+        "jinja2",
+        "web development"
       ],
       "type": "",
-      "run": "python input.py",
-      "file": "",
-      "input": "test",
-      "points": 5,
-      "timeout": 1
+      "run": "test -f app.py",
+      "points": 15,
+      "timeout": 10
     },
     {
       "specs": {
-        "title": "Ergänze das Python-Skript um eine Ausgabe des Namens. Gib dabei \"Hello NAME\" aus."
+        "title": "Erstelle ein Verzeichnis namens `templates` im Stammverzeichnis des Repos."
       },
-      "name": "add the output for the hello name",
-      "feedback": "The script does not seem to have an output with hello and the name that should have been entered.",
+      "name": "checking for templates directory",
+      "feedback": "Das Verzeichnis templates konnte nicht gefunden werden (Überprüfe die Verzeichnisnamen).",
       "urls": [
-        "https://www.w3schools.com/python/ref_func_print.asp"
+        "https://jinja.palletsprojects.com/en/3.0.x/templates/"
       ],
       "keywords": [
-        "python",
-        "print",
-        "variable"
+        "templates",
+        "directory"
       ],
       "type": "",
-      "run": "python input.py",
-      "file": "",
-      "input": "test",
-      "output": "Hello test",
-      "comparison": "contains",
+      "run": "test -d templates",
       "points": 5,
-      "timeout": 1
+      "timeout": 10
     },
     {
       "specs": {
-        "title": "Erstelle eine input.html-Datei",
-        "list": "Erstelle ein Formular mit der ID \"inputform\" im Body der html-Datei"
+        "title": "Erstelle eine HTML-Datei namens `register.html` im Verzeichnis `templates`."
       },
-      "name": "add the html file input.html",
-      "feedback": "There is the input.html file missing.",
+      "name": "checking for register.html",
+      "feedback": "Die Datei register.html konnte nicht gefunden werden (Überprüfe die Datei- und Verzeichnisnamen).",
       "urls": [
-        ""
+        "https://www.w3schools.com/html/"
       ],
       "keywords": [
         "html",
-        "file",
+        "create file",
+        "web development"
+      ],
+      "type": "",
+      "run": "test -f templates/register.html",
+      "points": 10,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Erstelle eine CSS-Datei namens `styles.css` im Stammverzeichnis des Repos."
+      },
+      "name": "checking for styles.css",
+      "feedback": "Die Datei styles.css konnte nicht gefunden werden (Überprüfe die Datei- und Verzeichnisnamen).",
+      "urls": [
+        "https://www.w3schools.com/css/"
+      ],
+      "keywords": [
+        "css",
+        "create file",
+        "web development"
+      ],
+      "type": "",
+      "run": "test -f styles.css",
+      "points": 10,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Verlinke die `styles.css`-Datei in der `register.html`-Datei."
+      },
+      "name": "checking for link to styles.css in register.html",
+      "feedback": "Die Verlinkung zur Datei styles.css in register.html konnte nicht gefunden werden (Überprüfe die Dateiinhalte).",
+      "urls": [
+        "https://www.w3schools.com/css/css_howto.asp"
+      ],
+      "keywords": [
+        "css",
+        "link",
+        "html"
+      ],
+      "type": "",
+      "run": "grep 'link.*styles.css' templates/register.html",
+      "points": 5,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Erstelle ein Formular in der `register.html`-Datei mit den erforderlichen Feldern (z.B., Vorname, Nachname, E-Mail, Passwort)."
+      },
+      "name": "checking for form fields in register.html",
+      "feedback": "Die erforderlichen Formularfelder in register.html konnten nicht gefunden werden (Überprüfe die Dateiinhalte).",
+      "urls": [
+        "https://www.w3schools.com/html/html_forms.asp"
+      ],
+      "keywords": [
+        "html",
         "form",
-        "id",
-        "body"
+        "web development"
       ],
       "type": "",
-      "javascript": "document.querySelectorAll('body form#inputform').length >= 1 ? 'true' : 'false';",
-      "file": "input.html",
-      "output": "true",
-      "comparison": "exact",
-      "points": 5,
-      "timeout": 1
+      "run": "grep -E '<input.*name=[\"']?(firstname|lastname|email|password)[\"']?.*>' templates/register.html",
+      "points": 10,
+      "timeout": 10
     },
     {
       "specs": {
-        "title": "Füge eine action und ein method Attribut in dem Form hinzu",
-        "list": [
-          "Die Action soll auf \"/\" weiterleiten.",
-          "Die Methode soll auf Post gesetzt werden"
-        ]
+        "title": "Passe das Flask-Skript (`app.py`) an, um die `register.html` als Template zu rendern und dem Benutzer die Möglichkeit zu geben, sich zu registrieren."
       },
-      "name": "add the action and method attribute",
-      "feedback": "The action and method attribute are missing. Check them",
+      "name": "checking for rendering of register.html in app.py",
+      "feedback": "Die Renderung von register.html in app.py konnte nicht gefunden werden (Überprüfe das Skript).",
       "urls": [
-        ""
+        "https://flask.palletsprojects.com/en/3.0.x/quickstart/",
+        "https://jinja.palletsprojects.com/en/3.0.x/intro/"
       ],
       "keywords": [
-        "html",
-        "action",
-        "form",
-        "method",
-        "post"
+        "flask",
+        "jinja2",
+        "render template",
+        "web development"
       ],
       "type": "",
-      "javascript": "document.querySelector('body form#inputform').getAttribute('method').toUpperCase()=='POST' && document.querySelector('body form#inputform').getAttribute('action')=='/';",
-      "file": "input.html",
-      "output": "true",
-      "comparison": "exact",
-      "points": 5,
-      "timeout": 1
+      "run": "grep 'render_template.*register.html' app.py",
+      "points": 10,
+      "timeout": 10
     },
     {
       "specs": {
-        "title": "Erstelle ein Fieldset mit der Legende, die den Namen 'Eingabe' enthält"
+        "title": "Style das Formular in der `register.html`-Datei mit Hilfe der `styles.css`."
       },
-      "name": "add the fieldset with legend 'eingabe'",
-      "feedback": "The fieldset with legend 'eingabe' is missing",
+      "name": "checking for styling of form in styles.css",
+      "feedback": "Das Styling des Formulars in styles.css konnte nicht gefunden werden (Überprüfe die Dateiinhalte).",
       "urls": [
-        ""
+        "https://www.w3schools.com/css/css_howto.asp"
       ],
       "keywords": [
-        "html",
-        "fieldset",
-        "legend"
+        "css",
+        "style",
+        "html"
       ],
       "type": "",
-      "javascript": "(function() { var fieldset = document.querySelector('fieldset'); var legend = fieldset ? fieldset.querySelector('legend') : null; return legend && legend.textContent === 'Eingabe'; })()",
-      "file": "input.html",
-      "output": "true",
-      "comparison": "exact",
-      "points": 5,
-      "timeout": 1
+      "run": "grep -E 'form.*{.*}' styles.css",
+      "points": 10,
+      "timeout": 10
     },
     {
       "specs": {
-        "title": "Erstelle ein input-Feld mit Typisierung für ein Textfeld"
+        "title": "Füge Validierung für die Formularfelder in `app.py` hinzu (z.B., Überprüfung der E-Mail-Adresse)."
       },
-      "name": "add the input field with type text",
-      "feedback": "The input field with its type text is missing",
+      "name": "checking for form validation in app.py",
+      "feedback": "Die Validierung der Formularfelder in app.py konnte nicht gefunden werden (Überprüfe das Skript).",
       "urls": [
-        ""
+        "https://flask.palletsprojects.com/en/3.0.x/patterns/wtforms/",
+        "https://wtforms.readthedocs.io/en/stable/"
       ],
       "keywords": [
-        "html",
-        "input",
-        "type",
-        "text"
+        "flask",
+        "form validation",
+        "web development"
       ],
       "type": "",
-      "javascript": "document.querySelectorAll('input[type=text]').length == 1",
-      "file": "input.html",
-      "output": "true",
-      "comparison": "exact",
-      "points": 5,
-      "timeout": 1
+      "run": "grep 'validate.*form' app.py",
+      "points": 10,
+      "timeout": 10
     },
     {
       "specs": {
-        "title": "Schreibe ein Label für das Eingabefeld"
+        "title": "Füge eine Erfolgsmeldung hinzu, die dem Benutzer nach erfolgreicher Registrierung angezeigt wird."
       },
-      "name": "add a label for the input field",
-      "feedback": "The label for the input field is missing",
+      "name": "checking for success message in app.py and register.html",
+      "feedback": "Die Erfolgsmeldung konnte nicht gefunden werden (Überprüfe das Skript und die HTML-Datei).",
       "urls": [
-        ""
+        "https://flask.palletsprojects.com/en/3.0.x/patterns/flashing/",
+        "https://jinja.palletsprojects.com/en/3.0.x/templates/"
       ],
       "keywords": [
-        "html",
-        "label"
+        "flask",
+        "flash messages",
+        "jinja2",
+        "web development"
       ],
       "type": "",
-      "javascript": "document.querySelectorAll('label').length == 1",
-      "file": "input.html",
-      "output": "true",
-      "comparison": "exact",
-      "points": 5,
-      "timeout": 1
-    },
-    {
-      "specs": {
-        "title": "Füge einen Submit-Button in das Formular hinzu"
-      },
-      "name": "Füge einen Submit-Button in das Formular hinzu",
-      "feedback": "Your form does not have a submit button. Please include an input with type 'submit' or a button with type 'submit'.",
-      "urls": [
-        "https://www.w3schools.com/tags/att_input_type_submit.asp"
-      ],
-      "keywords": [
-        "html",
-        "input",
-        "submit"
-      ],
-      "file": "input.html",
-      "javascript": "document.querySelectorAll('input[type=submit], button[type=submit]').length >= 1",
-      "output": "true",
-      "comparison": "exact",
-      "points": 10
+      "run": "grep -E 'flash.*success' app.py && grep 'success' templates/register.html",
+      "points": 10,
+      "timeout": 10
     }
   ]
 }
