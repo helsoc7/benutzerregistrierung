@@ -6,13 +6,12 @@
   "tests": [
     {
       "specs": {
-        "title": "Erstelle ein Python-Skript namens `app.py`, das das FastAPI-Framework verwendet und Jinja2 für die Template-Engine integriert."
+        "title": "Erstelle ein Python-Skript namens `app.py`."
       },
       "name": "checking for app.py",
       "feedback": "Die Datei app.py konnte nicht gefunden werden (Überprüfe die Datei- und Verzeichnisnamen).",
       "urls": [
-        "https://fastapi.tiangolo.com/",
-        "https://jinja.palletsprojects.com/en/3.0.x/intro/"
+    
       ],
       "keywords": [
         "python",
@@ -27,178 +26,25 @@
     },
     {
       "specs": {
-        "title": "Erstelle ein Verzeichnis namens `templates` im Stammverzeichnis des Repos."
+        "title": "Importiere in der app.py bitte von fastapi die Funktionen FastAPI und Request"
       },
-      "name": "checking for templates directory",
-      "feedback": "Das Verzeichnis templates konnte nicht gefunden werden (Überprüfe die Verzeichnisnamen).",
+      "name": "checking for module fastapi",
+      "feedback": "Couldn't find the imports fastapi and request",
       "urls": [
-        "https://jinja.palletsprojects.com/en/3.0.x/templates/"
+  
       ],
       "keywords": [
-        "templates",
-        "directory"
-      ],
-      "type": "",
-      "run": "test -d templates",
-      "points": 5,
-      "timeout": 10
-    },
-    {
-      "specs": {
-        "title": "Erstelle eine HTML-Datei namens `register.html` im Verzeichnis `templates`."
-      },
-      "name": "checking for register.html",
-      "feedback": "Die Datei register.html konnte nicht gefunden werden (Überprüfe die Datei- und Verzeichnisnamen).",
-      "urls": [
-        "https://www.w3schools.com/html/"
-      ],
-      "keywords": [
-        "html",
-        "create file",
-        "web development"
-      ],
-      "type": "",
-      "run": "test -f templates/register.html",
-      "points": 10,
-      "timeout": 10
-    },
-    {
-      "specs": {
-        "title": "Erstelle eine CSS-Datei namens `styles.css` im Stammverzeichnis des Repos."
-      },
-      "name": "checking for styles.css",
-      "feedback": "Die Datei styles.css konnte nicht gefunden werden (Überprüfe die Datei- und Verzeichnisnamen).",
-      "urls": [
-        "https://www.w3schools.com/css/"
-      ],
-      "keywords": [
-        "css",
-        "create file",
-        "web development"
-      ],
-      "type": "",
-      "run": "test -f styles.css",
-      "points": 10,
-      "timeout": 10
-    },
-    {
-      "specs": {
-        "title": "Verlinke die `styles.css`-Datei in der `register.html`-Datei."
-      },
-      "name": "checking for link to styles.css in register.html",
-      "feedback": "Die Verlinkung zur Datei styles.css in register.html konnte nicht gefunden werden (Überprüfe die Dateiinhalte).",
-      "urls": [
-        "https://www.w3schools.com/css/css_howto.asp"
-      ],
-      "keywords": [
-        "css",
-        "link",
-        "html"
-      ],
-      "type": "",
-      "run": "grep 'link.*styles.css' templates/register.html",
-      "points": 5,
-      "timeout": 10
-    },
-    {
-      "specs": {
-        "title": "Erstelle ein Formular in der `register.html`-Datei mit den erforderlichen Feldern (z.B., Vorname, Nachname, E-Mail, Passwort)."
-      },
-      "name": "checking for form fields in register.html",
-      "feedback": "Die erforderlichen Formularfelder in register.html konnten nicht gefunden werden (Überprüfe die Dateiinhalte).",
-      "urls": [
-        "https://www.w3schools.com/html/html_forms.asp"
-      ],
-      "keywords": [
-        "html",
-        "form",
-        "web development"
-      ],
-      "type": "",
-      "run": "grep -E '<input.*name=[\"']?(firstname|lastname|email|password)[\"']?.*>' templates/register.html",
-      "points": 10,
-      "timeout": 10
-    },
-    {
-      "specs": {
-        "title": "Passe das FastAPI-Skript (`app.py`) an, um die `register.html` als Template zu rendern und dem Benutzer die Möglichkeit zu geben, sich zu registrieren."
-      },
-      "name": "checking for rendering of register.html in app.py",
-      "feedback": "Die Renderung von register.html in app.py konnte nicht gefunden werden (Überprüfe das Skript).",
-      "urls": [
-        "https://fastapi.tiangolo.com/tutorial/templates/",
-        "https://jinja.palletsprojects.com/en/3.0.x/intro/"
-      ],
-      "keywords": [
+        "python",
         "fastapi",
         "jinja2",
-        "render template",
         "web development"
       ],
-      "type": "",
-      "run": "grep 'render_template.*register.html' app.py",
-      "points": 10,
-      "timeout": 10
-    },
-    {
-      "specs": {
-        "title": "Style das Formular in der `register.html`-Datei mit Hilfe der `styles.css`."
-      },
-      "name": "checking for styling of form in styles.css",
-      "feedback": "Das Styling des Formulars in styles.css konnte nicht gefunden werden (Überprüfe die Dateiinhalte).",
-      "urls": [
-        "https://www.w3schools.com/css/css_howto.asp"
-      ],
-      "keywords": [
-        "css",
-        "style",
-        "html"
-      ],
-      "type": "",
-      "run": "grep -E 'form.*{.*}' styles.css",
-      "points": 10,
-      "timeout": 10
-    },
-    {
-      "specs": {
-        "title": "Füge Validierung für die Formularfelder in `app.py` hinzu (z.B., Überprüfung der E-Mail-Adresse)."
-      },
-      "name": "checking for form validation in app.py",
-      "feedback": "Die Validierung der Formularfelder in app.py konnte nicht gefunden werden (Überprüfe das Skript).",
-      "urls": [
-        "https://fastapi.tiangolo.com/tutorial/handling-forms/",
-        "https://pydantic-docs.helpmanual.io/"
-      ],
-      "keywords": [
-        "fastapi",
-        "form validation",
-        "web development"
-      ],
-      "type": "",
-      "run": "grep 'validate.*form' app.py",
-      "points": 10,
-      "timeout": 10
-    },
-    {
-      "specs": {
-        "title": "Füge eine Erfolgsmeldung hinzu, die dem Benutzer nach erfolgreicher Registrierung angezeigt wird."
-      },
-      "name": "checking for success message in app.py and register.html",
-      "feedback": "Die Erfolgsmeldung konnte nicht gefunden werden (Überprüfe das Skript und die HTML-Datei).",
-      "urls": [
-        "https://fastapi.tiangolo.com/tutorial/handling-forms/#form-messages",
-        "https://jinja.palletsprojects.com/en/3.0.x/templates/"
-      ],
-      "keywords": [
-        "fastapi",
-        "flash messages",
-        "jinja2",
-        "web development"
-      ],
-      "type": "",
-      "run": "grep -E 'flash.*success' app.py && grep 'success' templates/register.html",
-      "points": 10,
+      "type": "pythonast",
+      "run": "/Module/body/Import[@module='fastapi' and (./alias[@name='FastAPI'] or./alias[@name='Request']",
+      "file": "app.py",
+      "points": 15,
       "timeout": 10
     }
+
   ]
 }
