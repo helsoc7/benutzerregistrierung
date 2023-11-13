@@ -4,7 +4,7 @@
 
 ---
 # Aufgabe
-[![GitHub Classroom Workflow](https://github.com/helsoc7/input-hello-short/actions/workflows/classroom.yml/badge.svg)](https://github.com/helsoc7/input-hello-short/actions/workflows/classroom.yml) [![Points badge](../../blob/badges/.github/badges/points.svg)](../../actions) 
+[![GitHub Classroom Workflow](https://github.com/helsoc7/benutzerregistrierung/actions/workflows/classroom.yml/badge.svg)](https://github.com/helsoc7/benutzerregistrierung/actions/workflows/classroom.yml) [![Points badge](../../blob/badges/.github/badges/points.svg)](../../actions) 
 
 In dieser ersten kleinen Mini-Aufgabe erstellt ihr ein Skript, das Hello World ausgibt. 
  Folgt den Anweisungen. Unter Hilfe findet ihr Links, die mit dem Wort Spickzettel markiert sind. Drückt diese bei Bedarf, falls ihr nicht weiterkommt. 

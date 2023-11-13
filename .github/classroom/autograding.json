@@ -1,5 +1,5 @@
 {
-  "repo": "helsoc7/input-hello-short",
+  "repo": "helsoc7/benutzerregistrierung",
   "maxTestIndex": 5,
   "incrementalPassRequired": true,
   "testLimit": 13,
