@@ -1,22 +1,22 @@
 {
-  "repo": "helsoc7/benutzerregistrierung",
-  "introduction": "In dieser Aufgabe erstellst du eine einfache Webanwendung, die Jinja2 Templates, HTML und CSS verwendet. Dein Ziel ist es, eine Benutzerregistrierungsseite zu erstellen. Folge den Anweisungen und Links unter Hilfe, wenn du Hilfe benötigst.",
+  "repo": "dein-repo/hello-web",
+  "introduction": "In dieser Aufgabe erstellst du eine einfache Webanwendung, die FastAPI, Jinja2 Templates, HTML und CSS verwendet. Dein Ziel ist es, eine Benutzerregistrierungsseite zu erstellen. Folge den Anweisungen und Links unter Hilfe, wenn du Hilfe benötigst.",
   "logo_url": "https://example.com/dein-logo.jpg",
   "timeframe": "60 Minuten (Viel Erfolg!)",
   "tests": [
     {
       "specs": {
-        "title": "Erstelle ein Python-Skript namens `app.py`, das das Flask-Framework verwendet und Jinja2 für die Template-Engine integriert."
+        "title": "Erstelle ein Python-Skript namens `app.py`, das das FastAPI-Framework verwendet und Jinja2 für die Template-Engine integriert."
       },
       "name": "checking for app.py",
       "feedback": "Die Datei app.py konnte nicht gefunden werden (Überprüfe die Datei- und Verzeichnisnamen).",
       "urls": [
-        "https://flask.palletsprojects.com/",
+        "https://fastapi.tiangolo.com/",
         "https://jinja.palletsprojects.com/en/3.0.x/intro/"
       ],
       "keywords": [
         "python",
-        "flask",
+        "fastapi",
         "jinja2",
         "web development"
       ],
@@ -121,16 +121,16 @@
     },
     {
       "specs": {
-        "title": "Passe das Flask-Skript (`app.py`) an, um die `register.html` als Template zu rendern und dem Benutzer die Möglichkeit zu geben, sich zu registrieren."
+        "title": "Passe das FastAPI-Skript (`app.py`) an, um die `register.html` als Template zu rendern und dem Benutzer die Möglichkeit zu geben, sich zu registrieren."
       },
       "name": "checking for rendering of register.html in app.py",
       "feedback": "Die Renderung von register.html in app.py konnte nicht gefunden werden (Überprüfe das Skript).",
       "urls": [
-        "https://flask.palletsprojects.com/en/3.0.x/quickstart/",
+        "https://fastapi.tiangolo.com/tutorial/templates/",
         "https://jinja.palletsprojects.com/en/3.0.x/intro/"
       ],
       "keywords": [
-        "flask",
+        "fastapi",
         "jinja2",
         "render template",
         "web development"
@@ -166,11 +166,11 @@
       "name": "checking for form validation in app.py",
       "feedback": "Die Validierung der Formularfelder in app.py konnte nicht gefunden werden (Überprüfe das Skript).",
       "urls": [
-        "https://flask.palletsprojects.com/en/3.0.x/patterns/wtforms/",
-        "https://wtforms.readthedocs.io/en/stable/"
+        "https://fastapi.tiangolo.com/tutorial/handling-forms/",
+        "https://pydantic-docs.helpmanual.io/"
       ],
       "keywords": [
-        "flask",
+        "fastapi",
         "form validation",
         "web development"
       ],
@@ -186,11 +186,11 @@
       "name": "checking for success message in app.py and register.html",
       "feedback": "Die Erfolgsmeldung konnte nicht gefunden werden (Überprüfe das Skript und die HTML-Datei).",
       "urls": [
-        "https://flask.palletsprojects.com/en/3.0.x/patterns/flashing/",
+        "https://fastapi.tiangolo.com/tutorial/handling-forms/#form-messages",
         "https://jinja.palletsprojects.com/en/3.0.x/templates/"
       ],
       "keywords": [
-        "flask",
+        "fastapi",
         "flash messages",
         "jinja2",
         "web development"
