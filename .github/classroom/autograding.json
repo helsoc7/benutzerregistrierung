@@ -44,7 +44,230 @@
       "file": "app.py",
       "points": 15,
       "timeout": 10
-    }
+    },
+    {
+      "specs": {
+        "title": "Außerdem soll von fastapi.templating nun Jinja2Templates importiert werden"
+      },
+      "name": "checking for module jinja",
+      "feedback": "Couldn't find the imports for jinja2templates",
+      "urls": [
+  
+      ],
+      "keywords": [
+        "python",
+        "fastapi",
+        "jinja2",
+        "web development"
+      ],
+      "type": "pythonast",
+      "run": "/Module/body/Import[@module='fastapi' and (./alias[@name='FastAPI'] or./alias[@name='Request']",
+      "file": "app.py",
+      "points": 15,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Außerdem soll von pydantic das BaseModel importiert werden"
+      },
+      "name": "checking for module pydantic",
+      "feedback": "Couldn't find the imports for pydantics basemodel",
+      "urls": [
+  
+      ],
+      "keywords": [
+        "python",
+        "fastapi",
+        "jinja2",
+        "web development"
+      ],
+      "type": "pythonast",
+      "run": "/Module/body/Import[@module='fastapi' and (./alias[@name='FastAPI'] or./alias[@name='Request']",
+      "file": "app.py",
+      "points": 15,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Erstelle die Klasse und zwar das Basemodel",
+        "list": ["Die Klasse soll den Namen RegistrationForm haben",
+                  "Sie soll die Attribute firstname (str), lastname (str), email (str) und password (str) haben"]
+      },
+      "name": "checking for registrationform class",
+      "feedback": "Couldn't find the basemodel registration form. Check the attributes and their data types",
+      "urls": [
+  
+      ],
+      "keywords": [
+        "python",
+        "fastapi",
+        "jinja2",
+        "web development"
+      ],
+      "type": "pythonast",
+      "run": "/Module/body/Import[@module='fastapi' and (./alias[@name='FastAPI'] or./alias[@name='Request']",
+      "file": "app.py",
+      "points": 15,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Erstelle einen Ordner templates"
+      },
+      "name": "checking for folder templates",
+      "feedback": "Couldn't find the folder templates",
+      "urls": [
+  
+      ],
+      "keywords": [
+        "python",
+        "fastapi",
+        "jinja2",
+        "web development"
+      ],
+      "type": "pythonast",
+      "run": "/Module/body/Import[@module='fastapi' and (./alias[@name='FastAPI'] or./alias[@name='Request']",
+      "file": "app.py",
+      "points": 15,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Erstelle ein template mit dem Namen register.html in dem templates Ordner",
+        "list": ["Das HTML Dokument soll den Titel und die Überschrift User Registration haben",
+                  "Erstelle ein Formular mit einer Action und einer POST-methode",
+                  " In dem Formular soll es die Eingabefelder firstname, lastname, email und password geben.",
+                "Setze alle Eingabefelder auf required und füge für jedes Eingabefeld ein Label hinzu",
+              "Füge außerdem einen Submit-Button mit Titel Register hinzu."]
+      },
+      "name": "checking for registration template",
+      "feedback": "Couldn't find registration template. Please check the html-file and try again",
+      "urls": [
+  
+      ],
+      "keywords": [
+        "python",
+        "fastapi",
+        "jinja2",
+        "web development"
+      ],
+      "type": "pythonast",
+      "run": "/Module/body/Import[@module='fastapi' and (./alias[@name='FastAPI'] or./alias[@name='Request']",
+      "file": "app.py",
+      "points": 15,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Erstelle ein template mit dem Namen success.html in dem templates Ordner",
+        "list": ["Das HTML Dokument soll den Titel und die Überschrift Registration Successful! haben",
+                  "Füge einen Paragraph mit dem Inhalt 'Thank you for registering. Your account has been created successfully.' im body hinzu"]
+      },
+      "name": "checking for success template",
+      "feedback": "Couldn't find success template. Please check the html-file and try again",
+      "urls": [
+  
+      ],
+      "keywords": [
+        "python",
+        "fastapi",
+        "jinja2",
+        "web development"
+      ],
+      "type": "pythonast",
+      "run": "/Module/body/Import[@module='fastapi' and (./alias[@name='FastAPI'] or./alias[@name='Request']",
+      "file": "app.py",
+      "points": 15,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Erstelle in der app.py eine GET-Route (\"/\") für dei Registrierung",
+        "list": ["In dieser Route soll das register.html Template aufgerufen werden"]
+      },
+      "name": "checking for registration template",
+      "feedback": "Couldn't find registration template. Please check the html-file and try again",
+      "urls": [
+  
+      ],
+      "keywords": [
+        "python",
+        "fastapi",
+        "jinja2",
+        "web development"
+      ],
+      "type": "pythonast",
+      "run": "/Module/body/Import[@module='fastapi' and (./alias[@name='FastAPI'] or./alias[@name='Request']",
+      "file": "app.py",
+      "points": 15,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Erstelle in der app.py eine POST-Route (\"/success\") für die erfolgreiche Registrierung",
+        "list": ["In dieser Route soll das success.html Template aufgerufen werden"]
+      },
+      "name": "checking for registration template",
+      "feedback": "Couldn't find registration template. Please check the html-file and try again",
+      "urls": [
+  
+      ],
+      "keywords": [
+        "python",
+        "fastapi",
+        "jinja2",
+        "web development"
+      ],
+      "type": "pythonast",
+      "run": "/Module/body/Import[@module='fastapi' and (./alias[@name='FastAPI'] or./alias[@name='Request']",
+      "file": "app.py",
+      "points": 15,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Initialisiere app, indem du die FastAPI()-Funktion aufrufst. Außerdem sollen die templates aus dem Verzeichnis templates stammen. Rufe dazu die Funktion Jinja2Templates() auf",
+        "list": ["In dieser Route soll das success.html Template aufgerufen werden"]
+      },
+      "name": "checking for registration template",
+      "feedback": "Couldn't find registration template. Please check the html-file and try again",
+      "urls": [
+  
+      ],
+      "keywords": [
+        "python",
+        "fastapi",
+        "jinja2",
+        "web development"
+      ],
+      "type": "pythonast",
+      "run": "/Module/body/Import[@module='fastapi' and (./alias[@name='FastAPI'] or./alias[@name='Request']",
+      "file": "app.py",
+      "points": 15,
+      "timeout": 10
+    },
+    {
+      "specs": {
+        "title": "Erstelle eine main-Funktion in der app.py, in der du uvicorn importiert und dann den uvicorn.run-Befehl aufrufst. Starte unter localhost auf Port 8000",
+        "list": ["In dieser Route soll das success.html Template aufgerufen werden"]
+      },
+      "name": "checking for registration template",
+      "feedback": "Couldn't find registration template. Please check the html-file and try again",
+      "urls": [
+  
+      ],
+      "keywords": [
+        "python",
+        "fastapi",
+        "jinja2",
+        "web development"
+      ],
+      "type": "pythonast",
+      "run": "/Module/body/Import[@module='fastapi' and (./alias[@name='FastAPI'] or./alias[@name='Request']",
+      "file": "app.py",
+      "points": 15,
+      "timeout": 10
+    },
 
   ]
 }
