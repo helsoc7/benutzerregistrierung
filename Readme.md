@@ -1,4 +1,4 @@
-<img src="https://example.com/dein-logo.jpg" alt="In dieser Aufgabe erstellst du eine einfache Webanwendung, die FastAPI, Jinja2 Templates, HTML und CSS verwendet. Dein Ziel ist es, eine Benutzerregistrierungsseite zu erstellen. Folge den Anweisungen und Links unter Hilfe, wenn du Hilfe benötigst." width="300"/>
+<img src="https://www.ehc-gelsenkirchen.de/images/Bilder/sonstiges/Benutzerregistrierung.jpg" alt="In dieser Aufgabe erstellst du eine einfache Webanwendung, die FastAPI, Jinja2 Templates, HTML und CSS verwendet. Dein Ziel ist es, eine Benutzerregistrierungsseite zu erstellen. Folge den Anweisungen und Links unter Hilfe, wenn du Hilfe benötigst." width="300"/>
 
 ---
 # Aufgabe
